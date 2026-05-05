@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Our Wholesale Products | Shamstrade LLC</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-lowest": "#ffffff",
+                        "surface-dim": "#dbd9dd",
+                        "outline": "#75777f",
+                        "surface-tint": "#4c5e88",
+                        "on-tertiary-fixed": "#251a00",
+                        "on-secondary-container": "#375082",
+                        "on-primary-fixed-variant": "#34466e",
+                        "on-error-container": "#93000a",
+                        "on-secondary": "#ffffff",
+                        "inverse-surface": "#303033",
+                        "on-secondary-fixed": "#001a43",
+                        "surface-container-high": "#e9e7eb",
+                        "surface": "#fbf8fc",
+                        "primary-fixed-dim": "#b4c6f6",
+                        "on-secondary-fixed-variant": "#2d4678",
+                        "inverse-primary": "#b4c6f6",
+                        "on-tertiary": "#ffffff",
+                        "on-primary-container": "#98aad8",
+                        "tertiary-container": "#503c00",
+                        "surface-container": "#efedf1",
+                        "primary": "#14284f",
+                        "secondary-container": "#abc3fe",
+                        "on-background": "#1b1b1e",
+                        "primary-fixed": "#d9e2ff",
+                        "on-error": "#ffffff",
+                        "secondary-fixed": "#d9e2ff",
+                        "outline-variant": "#c5c6cf",
+                        "on-primary-fixed": "#041a40",
+                        "on-tertiary-fixed-variant": "#594407",
+                        "background": "#fbf8fc",
+                        "surface-container-highest": "#e4e2e6",
+                        "tertiary": "#352700",
+                        "inverse-on-surface": "#f2f0f4",
+                        "on-primary": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "primary-container": "#2c3e66",
+                        "surface-bright": "#fbf8fc",
+                        "secondary": "#455e91",
+                        "on-surface-variant": "#44464e",
+                        "surface-container-low": "#f5f3f7",
+                        "tertiary-fixed": "#ffdf97",
+                        "secondary-fixed-dim": "#afc6ff",
+                        "on-surface": "#1b1b1e",
+                        "error": "#ba1a1a",
+                        "tertiary-fixed-dim": "#e2c37c",
+                        "surface-variant": "#e4e2e6",
+                        "on-tertiary-container": "#c4a762"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "gutter": "24px",
+                        "base": "8px",
+                        "sm": "12px",
+                        "xs": "4px",
+                        "xl": "80px",
+                        "md": "24px",
+                        "container-max": "1280px",
+                        "lg": "48px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "label-sm": ["Inter"],
+                        "h1": ["Inter"],
+                        "h2": ["Inter"],
+                        "h3": ["Inter"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "label-sm": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                        "h1": ["40px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "h2": ["32px", {"lineHeight": "1.3", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                        "h3": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .product-card-shadow {
+            box-shadow: 0px 4px 12px rgba(0,0,0,0.05);
+        }
+        .product-card-shadow:hover {
+            box-shadow: 0px 8px 20px rgba(0,0,0,0.08);
+        }
+    </style>
+</head>
+<body class="bg-background font-body-md text-on-background">
+<!-- TopNavBar -->
+<header class="sticky top-0 w-full z-50 bg-white/95 backdrop-blur-sm border-b border-slate-200 shadow-sm font-inter antialiased">
+<div class="flex justify-between items-center max-w-7xl mx-auto px-6 h-20">
+<div class="text-xl font-black tracking-tight text-[#2c3e66]">Shamstrade LLC</div>
+<nav class="hidden md:flex items-center space-x-8">
+<a class="text-slate-600 hover:text-[#2c3e66] transition-colors" href="#">Home</a>
+<a class="text-[#2c3e66] font-bold border-b-2 border-[#2c3e66] pb-1" href="#">Products</a>
+<a class="text-slate-600 hover:text-[#2c3e66] transition-colors" href="#">About</a>
+<a class="text-slate-600 hover:text-[#2c3e66] transition-colors" href="#">Contact</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="hidden md:flex items-center px-4 py-2 text-sm font-semibold rounded-lg bg-primary text-on-primary active:scale-95 duration-200 transition-all">
+                    Get Quote
+                </button>
+<button class="md:hidden text-[#2c3e66]">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</header>
+<main class="max-w-7xl mx-auto px-6 py-12">
+<!-- Page Header -->
+<section class="mb-12">
+<h1 class="font-h1 text-h1 text-primary mb-4">Our Wholesale Products</h1>
+<p class="text-body-lg text-on-surface-variant max-w-2xl">High-quality wholesale supplies curated for professional distributors. Explore our diverse catalog of premium brands and essential electronics.</p>
+</section>
+<!-- Category Filters -->
+<section class="mb-10 overflow-x-auto pb-4">
+<div class="flex flex-wrap gap-3 min-w-max md:min-w-0">
+<button class="px-6 py-2.5 rounded-full bg-primary text-on-primary font-label-sm text-label-sm transition-all shadow-md">All Products</button>
+<button class="px-6 py-2.5 rounded-full bg-white border border-outline-variant text-on-surface-variant font-label-sm text-label-sm hover:border-primary hover:text-primary transition-all">Health &amp; Beauty</button>
+<button class="px-6 py-2.5 rounded-full bg-white border border-outline-variant text-on-surface-variant font-label-sm text-label-sm hover:border-primary hover:text-primary transition-all">Home</button>
+<button class="px-6 py-2.5 rounded-full bg-white border border-outline-variant text-on-surface-variant font-label-sm text-label-sm hover:border-primary hover:text-primary transition-all">Electrical</button>
+<button class="px-6 py-2.5 rounded-full bg-white border border-outline-variant text-on-surface-variant font-label-sm text-label-sm hover:border-primary hover:text-primary transition-all">Sports</button>
+<button class="px-6 py-2.5 rounded-full bg-white border border-outline-variant text-on-surface-variant font-label-sm text-label-sm hover:border-primary hover:text-primary transition-all">Kitchen</button>
+<button class="px-6 py-2.5 rounded-full bg-white border border-outline-variant text-on-surface-variant font-label-sm text-label-sm hover:border-primary hover:text-primary transition-all">Computer</button>
+</div>
+</section>
+<!-- Product Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Product 1 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden product-card-shadow transition-all group border border-transparent hover:border-primary/20">
+<div class="aspect-square relative overflow-hidden bg-slate-100">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A professional studio product photograph of the FlexTail Gear Tiny Pump, a compact white cylindrical device sitting on a sleek outdoor surface. The lighting is crisp and even, highlighting its minimalist industrial design and portable scale. The background features soft blurred natural elements of a campsite at dawn, maintaining a clean corporate aesthetic. Soft shadows emphasize the texture of the durable plastic casing." src="https://lh3.googleusercontent.com/aida/ADBb0uiGgHEK3I7cwBhjSUKzpLDIkEP3sAs0RC-2ay1F6Npu4RHr96RXICyJ2VEXOM2-JoZPwYwk0SLZKn3YgAPV8nRvV7lRlRMDTOBrzKiBgHPDS0i03pxw9MioA0DzeBqUxsq-ecjaLrXGhN_86dd9nqg3k_1mx8yqCc8k7k99bVO_5lcXQ2VfJJi8mwD0XXd624pBYfb_hNQJl4QXRqKzIQBeq7qt_MrtwjyLcvswQny6s8y7Fj7vU8RrgN0X_heC3cT12_ew_V-4JQ"/>
+</div>
+<div class="p-5 flex flex-col h-full">
+<span class="text-xs font-bold text-primary tracking-widest uppercase mb-1">Electrical</span>
+<h3 class="font-h3 text-h3 text-on-surface mb-2 line-clamp-1">FlexTail Gear Tiny Pump</h3>
+<p class="text-label-sm text-on-surface-variant mb-4 flex-grow line-clamp-2">Portable rechargeable electric air pump for inflatables, camping gear, pool floats.</p>
+<div class="flex items-center justify-between mt-auto">
+<span class="text-primary font-bold text-lg">$39.99</span>
+<button class="p-2 rounded-lg bg-surface-container-high text-primary hover:bg-primary hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined">add_shopping_cart</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product 2 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden product-card-shadow transition-all group border border-transparent hover:border-primary/20">
+<div class="aspect-square relative overflow-hidden bg-slate-100">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="High-end skincare commercial photography of a CeraVe Moisturising Cream tub placed on a reflective marble surface. The lighting is high-key and clinical, emphasizing the clean blue and white brand colors. The composition is balanced and professional, suggesting dermatological reliability and pharmaceutical quality. Soft ambient light creates a pristine environment for this essential wholesale health product." src="https://lh3.googleusercontent.com/aida/ADBb0uj-GWQKln_q9FhwzQgO_5PKSlQoFV039fbWN1-lRQ9ZpVJ9FkC1ZGrv1kWlKgQvNdUYhkZib6naAEd4ctkxFWC97IBr2Q3Z-ZEpvt-x2w7NNsYycdTAYo3W81FYeijuSK1KC9IKcxzVlkJSB2O8hUZt73Gl89xRnNpQ1L_HB0qIClFSpTa8NU15UkCkOfjZIKHJ21kuzKlpUpBFlUpe0qWCFd5z1GYJmDuVn8i7loJtH2cAyghietfiSzMTG3D3Wr59EGEApQWN"/>
+</div>
+<div class="p-5 flex flex-col h-full">
+<span class="text-xs font-bold text-primary tracking-widest uppercase mb-1">Health &amp; Beauty</span>
+<h3 class="font-h3 text-h3 text-on-surface mb-2 line-clamp-1">CeraVe Moisturising Cream</h3>
+<p class="text-label-sm text-on-surface-variant mb-4 flex-grow line-clamp-2">Developed with dermatologists, for dry to very dry skin, with ceramides &amp; hyaluronic acid.</p>
+<div class="flex items-center justify-between mt-auto">
+<span class="text-primary font-bold text-lg">$24.99</span>
+<button class="p-2 rounded-lg bg-surface-container-high text-primary hover:bg-primary hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined">add_shopping_cart</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product 3 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden product-card-shadow transition-all group border border-transparent hover:border-primary/20">
+<div class="aspect-square relative overflow-hidden bg-slate-100">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Close-up studio shot of a NIVEA Soft Cream container resting on a bed of fresh white towels. The scene is illuminated by soft, diffused morning light, evoking a sense of cleanliness and gentle care. The deep blue logo contrasts sharply against the pristine white packaging. The overall mood is calm, professional, and hygiene-focused, perfect for a wholesale product display." src="https://lh3.googleusercontent.com/aida/ADBb0ugS_Gz1zfgGogZg66BB21Hp_T-2VxpyOenGueAqWiiwbrmFweLcauW7XVGO0qu-F6lzDWEgOfg0bjsnpYYF4pXatyTSR91F5xNwUDoTfKhmfWQ63blyweSD3kXNPDMvSNNPhI_PBheTqMtfGbD9imsMfGBVeQ_N7zH9kMqE7ePODTqoo4BQ8wky2NUkX00h5EmCzmahuYb-VFhFlc2AYU0gFuJO04XK323Tr8y5Q4qBR4d2u2FiJ3bdFZqR-PIY9GmlV62RHniwGQ"/>
+</div>
+<div class="p-5 flex flex-col h-full">
+<span class="text-xs font-bold text-primary tracking-widest uppercase mb-1">Health &amp; Beauty</span>
+<h3 class="font-h3 text-h3 text-on-surface mb-2 line-clamp-1">NIVEA Soft Cream</h3>
+<p class="text-label-sm text-on-surface-variant mb-4 flex-grow line-clamp-2">Light moisturizing cream for face, hands, and body.</p>
+<div class="flex items-center justify-between mt-auto">
+<span class="text-primary font-bold text-lg">$9.99</span>
+<button class="p-2 rounded-lg bg-surface-container-high text-primary hover:bg-primary hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined">add_shopping_cart</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product 4 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden product-card-shadow transition-all group border border-transparent hover:border-primary/20">
+<div class="aspect-square relative overflow-hidden bg-slate-100">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Artistic studio display of a Dove Pink Beauty Bar soap. The bar sits on a minimalist ceramic dish, surrounded by delicate pink silk fabric that ripples like water. The lighting is soft and warm, highlighting the smooth texture and the iconic embossed dove logo. The color palette is composed of gentle pastels and clean whites, reinforcing the brand's association with softness and moisturizing quality." src="https://lh3.googleusercontent.com/aida/ADBb0ujhUqCF5BYC58UsG9EsM4yqIFcOgtuiV2wKs7lqkKx94BcME2T7YizJ-0XrYkCD4rX_5Uekbb7Z6w7E4M24Q7EcSu9sugn9nAtIjdU_q4MwKrHxo0kbefs--fCm1jbhAlFk97V_iFV49TCVqD9EGVxILCfSxan7yJ-WUikEAV-PNaaFPsLsjW8mZ1iWLLMCpFGmvneAf0JlJ92EIzWkg7Oz6TjuVnip3f3dWI3umhJGPTnO51so-A_UQZ8He-nHB91cKVLPg4oiYw"/>
+</div>
+<div class="p-5 flex flex-col h-full">
+<span class="text-xs font-bold text-primary tracking-widest uppercase mb-1">Health &amp; Beauty</span>
+<h3 class="font-h3 text-h3 text-on-surface mb-2 line-clamp-1">Dove Pink Beauty Bar</h3>
+<p class="text-label-sm text-on-surface-variant mb-4 flex-grow line-clamp-2">Soft skin &amp; sweet scent with moisturizing cream.</p>
+<div class="flex items-center justify-between mt-auto">
+<span class="text-primary font-bold text-lg">$5.99</span>
+<button class="p-2 rounded-lg bg-surface-container-high text-primary hover:bg-primary hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined">add_shopping_cart</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product 5 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden product-card-shadow transition-all group border border-transparent hover:border-primary/20">
+<div class="aspect-square relative overflow-hidden bg-slate-100">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A clean, isolated product shot of a Dove Beauty Cream jar on a white architectural pedestal. The lighting uses soft side-lighting to define the curves of the round blue and white container. The background is a solid, light gray gradient that gives a professional B2B catalog feel. The atmosphere is clinical yet premium, showcasing the product as a reliable staple for wholesale distribution." src="https://lh3.googleusercontent.com/aida/ADBb0ug3aRh5TpcXCNkH1sYFTm7EiV-EUg2wjDfFPsgGcAJGReYK9OwOQHwHR87P0gyr67w386zm69kkLw1_uCeNR1VPEV7SvN8XhR35VaIcCmKmmOWCh8-neeSDJHlAEjLjbNaGNWXNYOdQ71N0IGl31fhHTKJpGw785pCLtbE5WPoOi6No7pPE8Lpi2oonWlyj5w7iFPxsSh0UUf_LJb5T3T2IeSH92MSa117090xfcJg0PqYfFltAz7BEqqlOsm0OCDH23dbyzVfWMg"/>
+</div>
+<div class="p-5 flex flex-col h-full">
+<span class="text-xs font-bold text-primary tracking-widest uppercase mb-1">Health &amp; Beauty</span>
+<h3 class="font-h3 text-h3 text-on-surface mb-2 line-clamp-1">Dove Beauty Cream</h3>
+<p class="text-label-sm text-on-surface-variant mb-4 flex-grow line-clamp-2">Rich moisturizing cream for soft and smooth skin.</p>
+<div class="flex items-center justify-between mt-auto">
+<span class="text-primary font-bold text-lg">$12.99</span>
+<button class="p-2 rounded-lg bg-surface-container-high text-primary hover:bg-primary hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined">add_shopping_cart</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product 6: Smart Home Kettle -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden product-card-shadow transition-all group border border-transparent hover:border-primary/20">
+<div class="aspect-square relative overflow-hidden bg-slate-100">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A sleek, matte black smart kettle with an integrated LED temperature display on the handle. It sits on a minimalist quartz kitchen countertop under soft, recessed ceiling lights. The aesthetic is ultra-modern and corporate, featuring a palette of deep grays, blacks, and brushed steel. The image captures the high-tech efficiency of modern kitchen appliances for a wholesale catalog." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDOFtyjXwRZlPmHASVm0xpHNqh1LqLH8gOoGpssaqJqk5SapulkqV7i2lACDjxx65YdUk7yJ8MeOY1sVp-xASfHsZTVXi0sq34kkDq5HbHub1KGYv-gduPQpHrntRm_NaSDwYKKAOJlBANgg8LywqMirRrytojvv-8W7IcD6vpvhNpas6sfriBErnnnKUHmlPXqYVQv4keyUe4jXFRVtkmRwAL-0Qqx5AQZUcUvJfSx8ZMlTHnja19l5j4ad5Lb5xH_eRjXy1-3sBY"/>
+</div>
+<div class="p-5 flex flex-col h-full">
+<span class="text-xs font-bold text-primary tracking-widest uppercase mb-1">Kitchen</span>
+<h3 class="font-h3 text-h3 text-on-surface mb-2 line-clamp-1">Smart Home Kettle</h3>
+<p class="text-label-sm text-on-surface-variant mb-4 flex-grow line-clamp-2">Precision temperature control with smartphone connectivity for the perfect brew.</p>
+<div class="flex items-center justify-between mt-auto">
+<span class="text-primary font-bold text-lg">$45.00</span>
+<button class="p-2 rounded-lg bg-surface-container-high text-primary hover:bg-primary hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined">add_shopping_cart</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product 7: Power Extension Lead -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden product-card-shadow transition-all group border border-transparent hover:border-primary/20">
+<div class="aspect-square relative overflow-hidden bg-slate-100">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A heavy-duty 8-outlet surge protector extension lead with integrated USB-C charging ports. The product is displayed against a clean, white studio background with professional product lighting that highlights the safety shutter details and the robust power cable. The visual style is functional and clear, emphasizing the reliability and scale of wholesale electrical equipment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhZG26fGJwYtfefP2zB4KRb4TZUIB_fp-vEdMRVwd8WT8mNL4dT0v4eBuf4gDEXMCzWH7-cYmunzwwUSk9z-4tz82IwFM5t_BQcnO8BnvsZDims--WRjh00Ei2k21FD_aBvNDRxKNWhovZo-VqcqJxwqBbvKztiEj5phyCfo3WnKChvDr52CDS88jIK1SHheFw-ZZrzdKn075ucrX34G8FSFDlwH4zpsdAxezgP8WYCQ9sVNpTgs43gw0Cgwbjwji5_j9vut-4Ecw"/>
+</div>
+<div class="p-5 flex flex-col h-full">
+<span class="text-xs font-bold text-primary tracking-widest uppercase mb-1">Electrical</span>
+<h3 class="font-h3 text-h3 text-on-surface mb-2 line-clamp-1">Power Extension Lead</h3>
+<p class="text-label-sm text-on-surface-variant mb-4 flex-grow line-clamp-2">8-way surge protected lead with smart USB charging ports and safety shutters.</p>
+<div class="flex items-center justify-between mt-auto">
+<span class="text-primary font-bold text-lg">$19.50</span>
+<button class="p-2 rounded-lg bg-surface-container-high text-primary hover:bg-primary hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined">add_shopping_cart</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product 8: Tennis Racket Pro -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden product-card-shadow transition-all group border border-transparent hover:border-primary/20">
+<div class="aspect-square relative overflow-hidden bg-slate-100">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A professional-grade graphite tennis racket propped against a minimalist concrete wall. The lighting is dramatic and directional, casting subtle shadows that highlight the aerodynamic frame and high-tension string patterns. The palette is a sophisticated mix of charcoal grays and vibrant accent colors, reflecting an elite sporting aesthetic suitable for wholesale buyers in the fitness industry." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIjb5vcH0evQm8UGxHjyJIKITSeOUuLVpqjIm3nKegXPkeLa6b1G4f_ud2rydccPy6Dar5ueIf44cgCFr9tZ6Xm2NVvztDsD3_4UyQbRwT2dj4gvQWoA3Tx6OcFPdePGdkRiZO7oqB0ns06AEleuHf99PLdhkAXh-NpLStKwkSm6XpMdMDWHm-2RnZgyGkYl-wSInDcAolJof_y0Y8g6SYw8ANLLCU_uT-OU37xOTsayu5lAYynSq4B5GuOCFcAWs87Mna4DWLLnA"/>
+</div>
+<div class="p-5 flex flex-col h-full">
+<span class="text-xs font-bold text-primary tracking-widest uppercase mb-1">Sports</span>
+<h3 class="font-h3 text-h3 text-on-surface mb-2 line-clamp-1">Tennis Racket Pro</h3>
+<p class="text-label-sm text-on-surface-variant mb-4 flex-grow line-clamp-2">Lightweight carbon fiber frame designed for maximum power and control.</p>
+<div class="flex items-center justify-between mt-auto">
+<span class="text-primary font-bold text-lg">$47.99</span>
+<button class="p-2 rounded-lg bg-surface-container-high text-primary hover:bg-primary hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined">add_shopping_cart</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product 9: Stainless Steel Knife Set -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden product-card-shadow transition-all group border border-transparent hover:border-primary/20">
+<div class="aspect-square relative overflow-hidden bg-slate-100">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A set of precision-crafted stainless steel kitchen knives arranged on a dark wood magnetic block. The high-contrast lighting gleams off the polished blades, emphasizing their sharp edges and ergonomic handles. The setting is a professional modern kitchen, conveying a message of durability and culinary excellence for bulk retail. The mood is sharp, clean, and authoritative." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDLD7ojEIoIkpqokKp5MRIjlMWQy4_zwtqL4sH_UKkFJHvXdeNCBJvQigTxqGsjxSnuj_WufcePujXVh0xZE41DemkuWAZr--niv8YgWrHFZJhuPV6FheNGffYFDTK95rtttjqfUMInJjBEJ6-v1vCSl035vIUpf4napvtiF9k9DHmhz15CPSBVT1by12xgR7ScqJfr5M7-gzUgCqhLRR7sY7DWzylptNNBXW0cWUuRJZHzWnVhMo2-J2zDsyY0uR3lsWxU0pI0GY4"/>
+</div>
+<div class="p-5 flex flex-col h-full">
+<span class="text-xs font-bold text-primary tracking-widest uppercase mb-1">Kitchen</span>
+<h3 class="font-h3 text-h3 text-on-surface mb-2 line-clamp-1">Stainless Steel Knife Set</h3>
+<p class="text-label-sm text-on-surface-variant mb-4 flex-grow line-clamp-2">5-piece professional grade set with forged ergonomic handles and sharp edges.</p>
+<div class="flex items-center justify-between mt-auto">
+<span class="text-primary font-bold text-lg">$34.00</span>
+<button class="p-2 rounded-lg bg-surface-container-high text-primary hover:bg-primary hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined">add_shopping_cart</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product 10: USB-C Docking Station -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden product-card-shadow transition-all group border border-transparent hover:border-primary/20">
+<div class="aspect-square relative overflow-hidden bg-slate-100">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A compact aluminum USB-C docking station with multiple ports connected to a laptop on a clean white desk. The lighting is bright and airy, typical of a modern home office environment. The image focuses on the sleek metallic finish and the variety of input ports, demonstrating high-end tech utility. The overall aesthetic is organized and professional, highlighting technical sophistication." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMuCyYqQRgtkLNApp3s6va7kiAFJBIuxenQOBd98I7pdjkPOHZLW5EykU9qVFUC1PS_EfD39Df7gY4YTuwT7JNsHTiA-cYs57S4puVb2tVQAU09WdlmXkw23_0g9kn29HZjpI-1lwKZ1bKoq2X5-_aFWVCPmKJW7FnMnNjcjEqu8C7z6z81I1sNgZQFQOd-u5SddMvh5TqfKmQ1sIH2mwI5KdUhhaaQMNR6Agp6TMe-rtBZsgq9J8heLsB99CCC9k6kD7enUzyaQk"/>
+</div>
+<div class="p-5 flex flex-col h-full">
+<span class="text-xs font-bold text-primary tracking-widest uppercase mb-1">Computer</span>
+<h3 class="font-h3 text-h3 text-on-surface mb-2 line-clamp-1">USB-C Docking Station</h3>
+<p class="text-label-sm text-on-surface-variant mb-4 flex-grow line-clamp-2">9-in-1 multi-port adapter with 4K HDMI, power delivery, and high-speed data transfer.</p>
+<div class="flex items-center justify-between mt-auto">
+<span class="text-primary font-bold text-lg">$28.99</span>
+<button class="p-2 rounded-lg bg-surface-container-high text-primary hover:bg-primary hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined">add_shopping_cart</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 bg-slate-50 border-t border-slate-200">
+<div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="space-y-4">
+<div class="text-lg font-bold text-[#2c3e66]">Shamstrade LLC</div>
+<p class="text-slate-500 text-sm font-inter">Global wholesale distribution with a focus on quality, reliability, and corporate professionalism. Delivering essential products across major categories.</p>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="flex flex-col space-y-2">
+<a class="text-slate-500 hover:text-[#2c3e66] text-sm font-inter transition-all" href="#">Home</a>
+<a class="text-[#2c3e66] underline text-sm font-inter" href="#">Products</a>
+<a class="text-slate-500 hover:text-[#2c3e66] text-sm font-inter transition-all" href="#">About</a>
+</div>
+<div class="flex flex-col space-y-2">
+<a class="text-slate-500 hover:text-[#2c3e66] text-sm font-inter transition-all" href="#">Contact</a>
+<a class="text-slate-500 hover:text-[#2c3e66] text-sm font-inter transition-all" href="#">Privacy Policy</a>
+<a class="text-slate-500 hover:text-[#2c3e66] text-sm font-inter transition-all" href="#">Terms of Service</a>
+</div>
+</div>
+<div class="space-y-4">
+<div class="text-sm font-bold text-[#2c3e66] uppercase tracking-wider">Join Our Catalog</div>
+<div class="flex gap-2">
+<input class="w-full bg-white border border-slate-200 rounded-lg px-4 py-2 text-sm focus:border-[#2c3e66] focus:ring-1 focus:ring-[#2c3e66] outline-none" placeholder="Email Address" type="email"/>
+<button class="bg-[#2c3e66] text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-primary transition-all">Subscribe</button>
+</div>
+<div class="text-slate-500 text-sm font-inter mt-4">
+                    © 2024 Shamstrade LLC. All rights reserved.
+                </div>
+</div>
+</div>
+</footer>
+</body></html>

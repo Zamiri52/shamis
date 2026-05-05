@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container-lowest": "#ffffff",
+                    "surface-dim": "#dbd9dd",
+                    "outline": "#75777f",
+                    "surface-tint": "#4c5e88",
+                    "on-tertiary-fixed": "#251a00",
+                    "on-secondary-container": "#375082",
+                    "on-primary-fixed-variant": "#34466e",
+                    "on-error-container": "#93000a",
+                    "on-secondary": "#ffffff",
+                    "inverse-surface": "#303033",
+                    "on-secondary-fixed": "#001a43",
+                    "surface-container-high": "#e9e7eb",
+                    "surface": "#fbf8fc",
+                    "primary-fixed-dim": "#b4c6f6",
+                    "on-secondary-fixed-variant": "#2d4678",
+                    "inverse-primary": "#b4c6f6",
+                    "on-tertiary": "#ffffff",
+                    "on-primary-container": "#98aad8",
+                    "tertiary-container": "#503c00",
+                    "surface-container": "#efedf1",
+                    "primary": "#14284f",
+                    "secondary-container": "#abc3fe",
+                    "on-background": "#1b1b1e",
+                    "primary-fixed": "#d9e2ff",
+                    "on-error": "#ffffff",
+                    "secondary-fixed": "#d9e2ff",
+                    "outline-variant": "#c5c6cf",
+                    "on-primary-fixed": "#041a40",
+                    "on-tertiary-fixed-variant": "#594407",
+                    "background": "#fbf8fc",
+                    "surface-container-highest": "#e4e2e6",
+                    "tertiary": "#352700",
+                    "inverse-on-surface": "#f2f0f4",
+                    "on-primary": "#ffffff",
+                    "error-container": "#ffdad6",
+                    "primary-container": "#2c3e66",
+                    "surface-bright": "#fbf8fc",
+                    "secondary": "#455e91",
+                    "on-surface-variant": "#44464e",
+                    "surface-container-low": "#f5f3f7",
+                    "tertiary-fixed": "#ffdf97",
+                    "secondary-fixed-dim": "#afc6ff",
+                    "on-surface": "#1b1b1e",
+                    "error": "#ba1a1a",
+                    "tertiary-fixed-dim": "#e2c37c",
+                    "surface-variant": "#e4e2e6",
+                    "on-tertiary-container": "#c4a762"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "gutter": "24px",
+                    "base": "8px",
+                    "sm": "12px",
+                    "xs": "4px",
+                    "xl": "80px",
+                    "md": "24px",
+                    "container-max": "1280px",
+                    "lg": "48px"
+            },
+            "fontFamily": {
+                    "body-md": ["Inter"],
+                    "body-lg": ["Inter"],
+                    "label-sm": ["Inter"],
+                    "h1": ["Inter"],
+                    "h2": ["Inter"],
+                    "h3": ["Inter"]
+            },
+            "fontSize": {
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "label-sm": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                    "h1": ["40px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "h2": ["32px", {"lineHeight": "1.3", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                    "h3": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #fbf8fc;
+        }
+    </style>
+</head>
+<body class="font-body-md text-on-background">
+<!-- TopNavBar -->
+<header class="sticky top-0 w-full z-50 bg-white/95 dark:bg-slate-900/95 backdrop-blur-sm border-b border-slate-200 dark:border-slate-800 shadow-sm dark:shadow-none font-inter antialiased">
+<div class="flex justify-between items-center max-w-7xl mx-auto px-6 h-20">
+<div class="text-xl font-black tracking-tight text-[#2c3e66] dark:text-white">
+                Shamstrade LLC
+            </div>
+<nav class="hidden md:flex items-center space-x-8">
+<a class="text-slate-600 dark:text-slate-400 hover:text-[#2c3e66] dark:hover:text-white transition-colors" href="#">Home</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-[#2c3e66] dark:hover:text-white transition-colors" href="#">Products</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-[#2c3e66] dark:hover:text-white transition-colors" href="#">About</a>
+<a class="text-[#2c3e66] dark:text-white font-bold border-b-2 border-[#2c3e66] dark:border-white pb-1" href="#">Contact</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="px-6 py-2.5 bg-primary text-white rounded-lg font-semibold hover:bg-primary-container transition-all active:scale-95 duration-200">
+                    Get Quote
+                </button>
+</div>
+</div>
+</header>
+<main class="max-w-7xl mx-auto px-6 py-16">
+<!-- Hero Section / Title -->
+<div class="mb-16">
+<h1 class="font-h1 text-h1 text-primary mb-4">Contact Us</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+                Partner with Shamstrade LLC for reliable wholesale solutions. Our team of logistics experts is ready to support your business scale.
+            </p>
+</div>
+<!-- Main Content Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+<!-- Left Column: Contact Info -->
+<div class="lg:col-span-5 space-y-8">
+<div class="bg-surface-container-lowest rounded-xl p-8 shadow-[0px_4px_12px_rgba(0,0,0,0.05)] border border-surface-variant/20 overflow-hidden relative">
+<div class="relative z-10 space-y-8">
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 rounded-lg bg-primary-container flex items-center justify-center text-on-primary-container shrink-0">
+<span class="material-symbols-outlined">mail</span>
+</div>
+<div>
+<p class="font-label-sm text-label-sm text-primary uppercase tracking-wider mb-1">Email Support</p>
+<a class="font-h3 text-h3 text-on-surface hover:text-primary transition-colors" href="mailto:contact@shamstradellc.com">contact@shamstradellc.com</a>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 rounded-lg bg-primary-container flex items-center justify-center text-on-primary-container shrink-0">
+<span class="material-symbols-outlined">corporate_fare</span>
+</div>
+<div>
+<p class="font-label-sm text-label-sm text-primary uppercase tracking-wider mb-1">Headquarters</p>
+<p class="font-body-md text-body-md text-on-surface">123 Logistics Boulevard, Suite 500<br/>Commercial District, NY 10001</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 rounded-lg bg-primary-container flex items-center justify-center text-on-primary-container shrink-0">
+<span class="material-symbols-outlined">schedule</span>
+</div>
+<div>
+<p class="font-label-sm text-label-sm text-primary uppercase tracking-wider mb-1">Business Hours</p>
+<p class="font-body-md text-body-md text-on-surface">Mon - Fri: 9:00 AM - 6:00 PM EST<br/>Sat - Sun: Closed</p>
+</div>
+</div>
+</div>
+<!-- Decorative Element -->
+<div class="absolute -bottom-12 -right-12 w-48 h-48 bg-primary/5 rounded-full blur-3xl"></div>
+</div>
+<!-- Featured Image -->
+<div class="rounded-xl overflow-hidden shadow-lg h-64 lg:h-80">
+<img class="w-full h-full object-cover" data-alt="A professional, high-end corporate office interior with glass partitions and modern architectural details. The lighting is bright and airy, reflecting a clean and successful business environment. Deep navy blue accents in the furniture and decor align with a corporate professional aesthetic. The scene conveys reliability, transparency, and a high level of organized commerce." src="https://lh3.googleusercontent.com/aida/ADBb0uiGgHEK3I7cwBhjSUKzpLDIkEP3sAs0RC-2ay1F6Npu4RHr96RXICyJ2VEXOM2-JoZPwYwk0SLZKn3YgAPV8nRvV7lRlRMDTOBrzKiBgHPDS0i03pxw9MioA0DzeBqUxsq-ecjaLrXGhN_86dd9nqg3k_1mx8yqCc8k7k99bVO_5lcXQ2VfJJi8mwD0XXd624pBYfb_hNQJl4QXRqKzIQBeq7qt_MrtwjyLcvswQny6s8y7Fj7vU8RrgN0X_heC3cT12_ew_V-4JQ"/>
+</div>
+</div>
+<!-- Right Column: Contact Form -->
+<div class="lg:col-span-7">
+<div class="bg-surface-container-lowest rounded-xl p-8 lg:p-12 shadow-[0px_4px_12px_rgba(0,0,0,0.05)] border border-surface-variant/20">
+<h2 class="font-h2 text-h2 text-primary mb-8">Send a Message</h2>
+<form class="space-y-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="font-label-sm text-label-sm text-on-surface-variant font-bold">NAME</label>
+<input class="w-full px-4 py-3 rounded-lg border border-outline-variant focus:outline-none focus:border-primary transition-colors bg-surface-bright" placeholder="John Doe" required="" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="font-label-sm text-label-sm text-on-surface-variant font-bold">EMAIL ADDRESS</label>
+<input class="w-full px-4 py-3 rounded-lg border border-outline-variant focus:outline-none focus:border-primary transition-colors bg-surface-bright" placeholder="john@company.com" required="" type="email"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="font-label-sm text-label-sm text-on-surface-variant font-bold">SUBJECT</label>
+<select class="w-full px-4 py-3 rounded-lg border border-outline-variant focus:outline-none focus:border-primary transition-colors bg-surface-bright appearance-none">
+<option>Wholesale Inquiry</option>
+<option>Logistics Support</option>
+<option>Billing &amp; Accounts</option>
+<option>General Information</option>
+</select>
+</div>
+<div class="space-y-2">
+<label class="font-label-sm text-label-sm text-on-surface-variant font-bold">MESSAGE</label>
+<textarea class="w-full px-4 py-3 rounded-lg border border-outline-variant focus:outline-none focus:border-primary transition-colors bg-surface-bright resize-none" placeholder="How can we help your business?" required="" rows="5"></textarea>
+</div>
+<button class="w-full md:w-auto px-12 py-4 bg-primary text-white rounded-lg font-bold hover:bg-[#1a2f5a] shadow-md hover:shadow-lg transition-all active:scale-95 duration-200" type="submit">
+                            Send Inquiry
+                        </button>
+</form>
+</div>
+</div>
+</div>
+<!-- Trust Section (Bento style) -->
+<div class="mt-24 grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="p-8 bg-surface-container rounded-xl flex flex-col items-center text-center space-y-4">
+<span class="material-symbols-outlined text-4xl text-primary" data-weight="fill">verified_user</span>
+<h3 class="font-h3 text-h3 text-primary">Reliability Guaranteed</h3>
+<p class="text-on-surface-variant">Stringent quality controls for every batch of wholesale goods we deliver.</p>
+</div>
+<div class="p-8 bg-surface-container rounded-xl flex flex-col items-center text-center space-y-4">
+<span class="material-symbols-outlined text-4xl text-primary" data-weight="fill">public</span>
+<h3 class="font-h3 text-h3 text-primary">Global Logistics</h3>
+<p class="text-on-surface-variant">Seamless supply chain management across international borders and ports.</p>
+</div>
+<div class="p-8 bg-surface-container rounded-xl flex flex-col items-center text-center space-y-4">
+<span class="material-symbols-outlined text-4xl text-primary" data-weight="fill">support_agent</span>
+<h3 class="font-h3 text-h3 text-primary">24/7 Account Portal</h3>
+<p class="text-on-surface-variant">Manage your orders and track shipments anytime through our B2B interface.</p>
+</div>
+</div>
+</main>
+<!-- Map/Visual Section -->
+<section class="w-full h-96 bg-surface-container-high relative overflow-hidden">
+<div class="absolute inset-0 grayscale opacity-40">
+<img class="w-full h-full object-cover" data-alt="A sophisticated, high-altitude aerial view of a modern shipping port at twilight. The scene is illuminated by crisp, white industrial lights against a deep navy blue background. Orderly rows of colorful cargo containers create a perfect geometric grid, symbolizing efficiency and massive scale. The aesthetic is clean, professional, and powerful, capturing the essence of global trade." src="https://lh3.googleusercontent.com/aida/ADBb0ujhUqCF5BYC58UsG9EsM4yqIFcOgtuiV2wKs7lqkKx94BcME2T7YizJ-0XrYkCD4rX_5Uekbb7Z6w7E4M24Q7EcSu9sugn9nAtIjdU_q4MwKrHxo0kbefs--fCm1jbhAlFk97V_iFV49TCVqD9EGVxILCfSxan7yJ-WUikEAV-PNaaFPsLsjW8mZ1iWLLMCpFGmvneAf0JlJ92EIzWkg7Oz6TjuVnip3f3dWI3umhJGPTnO51so-A_UQZ8He-nHB91cKVLPg4oiYw"/>
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
+<div class="relative z-10 h-full flex items-center justify-center">
+<div class="bg-white/90 backdrop-blur-md p-6 rounded-xl shadow-xl border border-white max-w-md text-center">
+<h3 class="font-h3 text-primary mb-2">Visit Our Center</h3>
+<p class="text-on-surface-variant mb-4">Discover how we manage the supply chain that powers your business.</p>
+<div class="inline-flex items-center gap-2 text-primary font-bold cursor-pointer hover:underline transition-all">
+                    View on Google Maps <span class="material-symbols-outlined">arrow_outward</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="w-full py-12 bg-slate-50 dark:bg-slate-950 border-t border-slate-200 dark:border-slate-800 font-inter text-sm">
+<div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="space-y-4">
+<div class="text-lg font-bold text-[#2c3e66] dark:text-white">Shamstrade LLC</div>
+<p class="text-slate-500 dark:text-slate-400 max-w-xs">Connecting global manufacturers with quality-conscious wholesale buyers through efficient logistics.</p>
+</div>
+<div>
+<h4 class="font-bold text-[#2c3e66] dark:text-white mb-4">Quick Links</h4>
+<ul class="space-y-2">
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-[#2c3e66] dark:hover:text-white hover:underline transition-all cursor-pointer" href="#">Home</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-[#2c3e66] dark:hover:text-white hover:underline transition-all cursor-pointer" href="#">Products</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-[#2c3e66] dark:hover:text-white hover:underline transition-all cursor-pointer" href="#">About</a></li>
+<li><a class="text-[#2c3e66] dark:text-white underline cursor-pointer" href="#">Contact</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-[#2c3e66] dark:text-white mb-4">Legal</h4>
+<ul class="space-y-2">
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-[#2c3e66] dark:hover:text-white hover:underline transition-all cursor-pointer" href="#">Privacy Policy</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-[#2c3e66] dark:hover:text-white hover:underline transition-all cursor-pointer" href="#">Terms of Service</a></li>
+</ul>
+<div class="mt-8 text-slate-500 dark:text-slate-400">
+                    © 2024 Shamstrade LLC. All rights reserved.
+                </div>
+</div>
+</div>
+</footer>
+</body></html>
